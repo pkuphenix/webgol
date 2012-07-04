@@ -1,0 +1,81 @@
+* {margin:0;padding:0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+body {
+	background:url("bg-home-tile.jpg") repeat-x scroll 50% 25px #39414A;
+	font:62.5% "Trebuchet MS",Verdana,Helvetica,Arial,sans-serif !important;
+	color:#FFF;
+}
+.go-pagebox {
+	margin: 0 auto;
+	width: 910px;
+}
+.go-header {
+	height: 156px;
+}
+#go-header-table {
+	width:100%;
+	height:134px;
+}
+#go-header-table td {
+	width:33%;
+}
+.go-content {
+	background:url("bg_home_content.gif") repeat-x scroll center top #181C21;
+}
+#go-canvas {
+	margin:0 auto;
+	background:#181C21;
+	display:block;
+}
+.go-footer {
+	height:123px;
+	background:#888;
+}
+#go-footer-table {
+	width:100%;
+	height:120px;
+}
+#go-footer-table td {
+	width:33%;
+}
+#go-panel-pattern {
+	background:#234;
+}
+#go-panel-pattern-table {
+	margin-right:20px;
+}
+#go-panel-control {
+	background:#243;
+}
+#go-panel-control input {
+	width:200px;
+	margin-left:48px;
+	margin-top:10px;
+}
+#go-panel-status {
+	background:#342;
+}
+#go-panel-size {
+	background:#324;
+}
+#go-panel-size-table {
+	margin-right:20px;
+}
+#go-panel-color {
+	background:#432;
+}
+#go-panel-about {
+	background:#423;
+}
+
+.bigtext {
+	font-size:20px;
+}

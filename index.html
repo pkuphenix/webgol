@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>WebGOL - a small tool playing with Conway's Game of Life</title>
+<link rel="stylesheet" type="text/css" href="gol.css">
+<script type="text/javascript" src="jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="utils.js"></script>
+<script type="text/javascript" src="patterns.js"></script>
+<script type="text/javascript" src="gol.js"></script>
+</head>
+<body>
+<div style="background:black;height:25px;line-height:25px;padding-left:10px;">
+	Welcome to <span style="font-weight:bold;">WebGOL</span> -- a small tool playing with Conway's Game of Life --&nbsp;
+	<a href="http://gushingach.tk/wp/?p=5" style="color:white;">Link to the introducing post</a>
+</div>
+<div class="go-pagebox">
+<div class="go-header">
+	<table id="go-header-table">
+	<tr>
+	<td id="go-panel-pattern">
+		<table id="go-panel-pattern-table">
+		<tr>
+		<td align="right"><label>Pattern</label></td>
+		<td><select style="width:200px;" id="pattern_pulldown">
+		</select></td>
+		</tr>
+		<tr>
+		<td valign="top" align="right"><label>RLE <a href="">?</a></label></td>
+		<td><textarea style="width:200px;height:60px;" id="rle_textarea"></textarea></td>
+		<tr>
+		<td align="right">
+		</td>
+		<td>
+		<input type="button" value="Apply" style="width:30%;" id="apply_btn" />
+		<input type="button" value="Load" style="width:30%;" id="load_btn" />
+		</td>
+		</tr>
+		</table>
+	</td>
+	<td id="go-panel-control">
+		<input type="button" value="Start" id="start_btn" /><br />
+		<input type="button" value="Pause" id="pause_btn" disabled="disabled" /><br />
+		<input type="button" value="Reset" id="reset_btn" /><br />
+	</td>
+	<td id="go-panel-status">
+		<table id="go-panel-status-table" style="text-align:right;" cellspacing="10">
+			<tr>
+				<td>Time: <span class="bigtext timetext" id="info_timer">0</span> sec
+				</td>
+				<td>Generation: <span class="bigtext gentext" id="info_generation">0</span>
+				</td>
+			</tr>
+			<tr><td></td><td><span class="bigtext livetext" id="info_lives">0</span> Lives
+				</td>
+			</tr>
+			<tr><td>FPS: <span id="fpstext">0</span></td>
+				<td>Target FPS&nbsp;
+					<select id="fps_pulldown">
+						<option value="100">100</option>
+						<option value="50">50</option>
+						<option value="25">25</option>
+						<option value="20">20</option>
+						<option value="10">10</option>
+						<option selected value="5">5</option>
+						<option value="1">1</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+	</td>
+	</tr>
+	</table>
+</div>
+<div class="go-content">
+<canvas id="go-canvas" width="800" height="800"></canvas>
+</div>
+<div class="go-footer">
+	<table id="go-footer-table">
+	<tr>
+		<td id="go-panel-size">
+			<table id="go-panel-size-table" cellspacing=10>
+			<tr>
+			<td align="right"><label>Grid Size</label></td>
+			<td><select style="width:200px;" id="grid_size_pulldown">
+				<option value="2">2px</option>
+				<option selected value="4">4px</option>
+				<option value="8">8px</option>
+				<option value="16">16px</option>
+			</select></td>
+			</tr>
+			<tr>
+			<td valign="top" align="right"><label>Grid Count</label></td>
+			<td id="scene_size_show">200 X 200</td>
+			</tr>
+			</table>
+		</td>
+		<td id="go-panel-color">
+			<table id="go-panel-size-table" cellspacing=10>
+			<tr>
+			<td align="right"><label>Dead Color</label></td>
+			<td><input value="#181C21" id="dead_color_input" /></td>
+			</tr>
+			<tr>
+			<td align="right"><label>Alive Color</label></td>
+			<td><input value="#aaa" id="alive_color_input" /></td>
+			</tr>
+			</table>
+		</td>
+		<td id="go-panel-about">
+			<table id="go-panel-about-table" cellspacing=10>
+			<tr>
+			<td align="right"><label>Build up with</label></td>
+			<td><img src="http://www.w3.org/html/logo/downloads/HTML5_Badge_32.png" /> Canvas</td>
+			</tr>
+			<tr>
+			<td align="right"><label>Contact</label></td>
+			<td><span class="">pkuphenix@gmail.com</span></td>
+			</tr>
+			</table>
+		</td>
+	</tr>
+	</table>
+</div>
+</div>
+</body>
+</html>
