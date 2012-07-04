@@ -1,6 +1,9 @@
 #VISIT
 the site: <http://gushingach.tk/wp/?p=5>
+
 the intro blog: <http://gushingach.tk/exp/webgol/>
+
+![The Screenshot](https://github.com/pkuphenix/webgol/raw/master/webgol.png)
 
 #USAGE
 1. Just choose from the pattern list and click Start/Pause/Reset.
