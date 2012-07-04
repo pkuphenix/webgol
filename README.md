@@ -11,3 +11,4 @@ the intro blog: <http://gushingach.tk/exp/webgol/>
 3. Click on the scene to give life to or to kill the lives (only when paused).
 
 #LICENSE
+*MIT license*: <http://lqian.mit-license.org>
