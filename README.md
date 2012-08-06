@@ -1,7 +1,7 @@
 #VISIT
-the site: <http://gushingach.tk/exp/webgol/>
+the site: <http://lqian.net/exp/webgol/>
 
-the intro blog: <http://gushingach.tk/wp/?p=5>
+the intro blog: <http://lqian.net/b/play-with-conways-game-of-life-with-html5-canvas/>
 
 ![The Screenshot](https://github.com/pkuphenix/webgol/raw/master/webgol.png)
 
